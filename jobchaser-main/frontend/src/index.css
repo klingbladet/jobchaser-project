@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-text-primary: #1e293b;
+  
+  --color-dark-bg-primary: #0f172a;
+  --color-dark-bg-secondary: #1e293b
+  ;
+  --color-dark-text-primary: #f8fafc;
+}
+
+/* Basstilar för hela appen */
+:root {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: var(--color-dark-bg-primary);
+  color: var(--color-dark-text-primary);
+}
+
+/* Hjälpklasser för att använda dina färger i HTML */
+@utility bg-primary {
+  background-color: var(--color-bg-secondary);
+  .dark & {
+    background-color: var(--color-dark-bg-secondary);
+  }
+}
+
+@utility bg-secondary {
+  background-color: var(--color-bg-secondary);
+  .dark & {
+    background-color: var(--color-dark-bg-secondary);
+  }
+}
+
+@utility text-main {
+  color: var(--color-text-primary);
+  .dark & {
+    color: var(--color-dark-text-primary);
+  }
+}

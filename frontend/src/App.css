@@ -1,0 +1,14 @@
+:root {
+  /* Light Mode Values */
+  font-family: "Montserrat", sans-serif;
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f3f4f6;
+  --color-text-primary: #111827;
+}
+
+.dark {
+/* Dark Mode Values */
+--color-bg-primary: #111827;
+--color-bg-secondary: #1f2937;
+--color-text-primary: #f9fafb;
+}
