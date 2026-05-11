@@ -22,6 +22,7 @@
   "scripts": {
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "dev": "tsx index.ts"
+    "dev": "tsx index.ts",
+    "start": "tsx index.ts"
   }
 }

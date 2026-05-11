@@ -1,4 +1,4 @@
-import 'dotenv';
+import 'dotenv/config';
 import express from 'express';
 import usersRouter from './routes/users';
 import jobsRouter from './routes/jobs'
